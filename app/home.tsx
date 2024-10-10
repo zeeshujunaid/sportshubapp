@@ -1,7 +1,9 @@
 import { View,Text } from "react-native";
-
- export default function Mainpage(){
+import Drawer from "expo-router/drawer";
+ export default function Home(){
     return(
-        <View><Text>home page </Text></View>
+        <View><Text>home page new </Text>
+        <Drawer/>
+        </View>
     );
  }
