@@ -9,7 +9,7 @@ export default function Signup() {
             flexDirection: 'column',
             paddingTop: "20%",
             alignItems: 'center',
-            backgroundColor: "#F7F7F7",
+            backgroundColor: "#0d1117",
             height: "100%",
           }}>
             <View style={{ height: "25%", width: "100%", alignItems: "center" }}>

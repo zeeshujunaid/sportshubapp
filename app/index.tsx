@@ -3,7 +3,7 @@ import { Text, View,Image } from "react-native";
 
 export default function Index() {
   return (
-    <View style={{ flex: 1, justifyContent: "center", alignItems: "center",backgroundColor:"white", }}>
+    <View style={{ flex: 1, justifyContent: "center", alignItems: "center",backgroundColor:"#0d1117", }}>
             <Image
                 source={{ uri: 'https://i.gifer.com/7Ygv.gif' }}
                 style={{ height: "50%", width: "100%", objectFit: "contain", }}
