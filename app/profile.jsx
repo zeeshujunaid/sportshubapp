@@ -1,12 +1,12 @@
 import React from "react";
-// import Header from "@/components/Header";
+import Header from "../components/header";
 import Ionicons from "react-native-vector-icons/Ionicons";
 import { Image, ScrollView, StyleSheet, Text, View } from "react-native";
 
 const Profile = () => {
   return (
     <View style={{ paddingBottom: 30 }}>
-      {/* <Header /> */}
+      <Header title="profile"/>
       <ScrollView>
         <View style={styles.contain}>
           <View style={styles.inner}>

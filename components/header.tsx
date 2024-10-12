@@ -20,15 +20,15 @@ export default function Header(props: HeaderProps) {
 const styles = StyleSheet.create({
   container: {
     padding: 20,
-    paddingTop: 70,
+    paddingTop: 40,
     flexDirection: "row",
     alignItems: "center",
-    backgroundColor: "tomato",
+    backgroundColor: "rgba(178, 34, 34, 1)",
   },
   title: {
-    fontSize: 18,
-    marginLeft: 10,
+    fontSize: 20,
+    marginLeft: 50,
     color: "white",
-    fontWeight: "700",
+    fontWeight: "900",
   },
 });
