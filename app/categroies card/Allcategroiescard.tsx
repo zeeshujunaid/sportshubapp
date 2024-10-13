@@ -16,7 +16,7 @@ function Allcategroies(){
                             {/* Category 1 */}
                             <View style={{ width: 90, height: 90, borderRadius: 30, overflow: 'hidden', marginHorizontal: 10 }}>
                                 <ImageBackground
-                                    source={{ uri: 'https://www.shutterstock.com/image-vector/illustration-batsman-playing-cricket-action-600nw-2469264547.jpg' }}
+                                    source={{ uri: 'https://img.freepik.com/free-vector/cricket-banner-batsman-championship-particle-background-use-cover-poster-template-brochure-decorated-flyer-banner_460848-7122.jpg' }}
                                     style={{ width: '100%', height: '100%', justifyContent: 'center', alignItems: 'center' }}
                                 >
                                     <Text style={{ textAlign: 'center', color: 'rgba(220, 20, 60, 0.6)', fontSize: 16, fontWeight: '800' }}>Cricket</Text>
@@ -26,7 +26,7 @@ function Allcategroies(){
                             {/* Category 2 */}
                             <View style={{ width: 90, height: 90, borderRadius: 30, overflow: 'hidden', marginHorizontal: 10 }}>
                                 <ImageBackground
-                                    source={{ uri: 'https://png.pngtree.com/png-vector/20190330/ourmid/pngtree-vector-hockey-icon-png-image_892007.jpg' }}
+                                    source={{ uri: 'https://png.pngtree.com/thumb_back/fw800/background/20230628/pngtree-white-background-3d-render-of-a-male-hockey-player-striking-the-image_3687658.jpg' }}
                                     style={{ width: '100%', height: '100%', justifyContent: 'center', alignItems: 'center' }}
                                 >
                                     <Text style={{ textAlign: 'center', color: 'rgba(220, 20, 60, 0.6)', fontSize: 16, fontWeight: '800' }}>Hockey</Text>
@@ -36,7 +36,7 @@ function Allcategroies(){
                             {/* Category 3 */}
                             <View style={{ width: 90, height: 90, borderRadius: 30, overflow: 'hidden', marginHorizontal: 10 }}>
                                 <ImageBackground
-                                    source={{ uri: 'https://www.shutterstock.com/image-vector/vector-illustration-silhouettes-basketball-player-600w-1877881808.jpg' }}
+                                    source={{ uri: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTq1Nnf63IErt2T7nKiycoFQw4eD2h6VSuwaw&s' }}
                                     style={{ width: '100%', height: '100%', justifyContent: 'center', alignItems: 'center' }}
                                 >
                                     <Text style={{ textAlign: 'center', color: 'rgba(220, 20, 60, 0.6)', fontSize: 16, fontWeight: '800' }}>Basketball</Text>
@@ -45,7 +45,7 @@ function Allcategroies(){
                             {/* Category 4 */}
                             <View style={{ width: 90, height: 90, borderRadius: 30, overflow: 'hidden', marginHorizontal: 10 }}>
                                 <ImageBackground
-                                    source={{ uri: 'https://www.shutterstock.com/image-vector/vector-illustration-silhouettes-basketball-player-600w-1877881808.jpg' }}
+                                    source={{ uri: 'https://png.pngtree.com/thumb_back/fh260/background/20230625/pngtree-football-3d-rendering-soccer-ball-on-black-background-image_3675781.jpg' }}
                                     style={{ width: '100%', height: '100%', justifyContent: 'center', alignItems: 'center' }}
                                 >
                                     <Text style={{ textAlign: 'center', color: 'rgba(220, 20, 60, 0.6)', fontSize: 16, fontWeight: '800' }}>Football</Text>
@@ -54,7 +54,7 @@ function Allcategroies(){
                             {/* Category 5 */}
                             <View style={{ width: 90, height: 90, borderRadius: 30, overflow: 'hidden', marginHorizontal: 10 }}>
                                 <ImageBackground
-                                    source={{ uri: 'https://www.shutterstock.com/image-vector/vector-illustration-silhouettes-basketball-player-600w-1877881808.jpg' }}
+                                    source={{ uri: 'https://www.shutterstock.com/shutterstock/videos/3416348099/thumb/5.jpg?ip=x480' }}
                                     style={{ width: '100%', height: '100%', justifyContent: 'center', alignItems: 'center' }}
                                 >
                                     <Text style={{ textAlign: 'center', color: 'rgba(220, 20, 60, 0.6)', fontSize: 16, fontWeight: '800' }}>Tennis</Text>

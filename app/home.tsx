@@ -50,6 +50,11 @@ export default function Home() {
                 <Cricket />
                 <Football />
                 <Basketball />
+                <View style={{ height: 180, width: "100%", flexDirection: "row", justifyContent: "space-around", paddingTop: "5%" }}>
+                    <Image source={{uri:"https://img.freepik.com/free-vector/abstract-dark-sales-background_23-2148429942.jpg"}}
+                    style={{height:"100%",width:"100%",resizeMode:"cover",}}
+                    />
+                </View>
                 <Hockey />
                 <Tennis />
             </ScrollView>

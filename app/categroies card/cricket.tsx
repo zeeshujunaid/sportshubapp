@@ -21,7 +21,7 @@ function Cricket() {
                     <View style={{ flexDirection: "column", width: "50%", backgroundColor: "rgba(220, 20, 60, 0.6)", height: "100%" }}>
                         <View style={{ height: "50%", width: "100%", backgroundColor: "rgba(220, 20, 60, 0.6)", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
                             <Text style={{ textAlign: "center", fontSize: 24, fontWeight: "800" }}>MRF BAT</Text>
-                            <Text style={{ textAlign: "center", fontSize: 13, fontWeight: "500" }}>new bat not used sign by vk new special</Text>
+                            {/* <Text style={{ textAlign: "center", fontSize: 13, fontWeight: "500" }}>new bat not used sign by vk new special</Text> */}
                         </View>
                         <View style={{ height: "50%", width: "100%", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
                             <Text style={{ textAlign: "center", fontSize: 25, fontWeight: "900", height: "50%" }}>$900</Text>
@@ -34,7 +34,7 @@ function Cricket() {
                     </View>
                     <View style={{ flexDirection: "column", width: "50%", backgroundColor: "#3323af", height: "100%" }}>
                         <Image
-                            source={{ uri: "https://m.media-amazon.com/images/I/61VD6F3CiYL._AC_UF894,1000_QL80_.jpg" }}
+                            source={{ uri: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCoKi5QP20Z7kWLxlTzgqktJPT_P_ZK8h3WA&s" }}
                             style={{ height: "100%", width: "100%" }}
                         />
                     </View>
@@ -43,9 +43,9 @@ function Cricket() {
                 {/* Repeat similar structure for more cards */}
                 <View style={{ width: 280, height: 150, borderRadius: 30, overflow: 'hidden', marginHorizontal: 10, flexDirection: "row", backgroundColor: "rgba(220, 20, 60, 0.6)", }}>
                     <View style={{ flexDirection: "column", width: "50%", backgroundColor: "rgba(220, 20, 60, 0.6)", height: "100%" }}>
-                        <View style={{ height: "50%", width: "100%", backgroundColor: "rgba(220, 20, 60, 0.6)", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
-                            <Text style={{ textAlign: "center", fontSize: 24, fontWeight: "800" }}>MRF BAT</Text>
-                            <Text style={{ textAlign: "center", fontSize: 13, fontWeight: "500" }}>new bat not used sign by vk new special</Text>
+                        <View style={{ height: "50%", width: "100%", backgroundColor: "rgba(220, 20, 60, 0.6)", justifyContent: "center", alignItems: "center" }}>
+                            <Text style={{ textAlign: "center", fontSize: 22, fontWeight: "800" }}>GRAY NICOLAS</Text>
+                            {/* <Text style={{ textAlign: "center", fontSize: 13, fontWeight: "500" }}>new bat not used sign by vk new special</Text> */}
                         </View>
                         <View style={{ height: "50%", width: "100%", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
                             <Text style={{ textAlign: "center", fontSize: 25, fontWeight: "900", height: "50%" }}>$900</Text>
@@ -58,7 +58,7 @@ function Cricket() {
                     </View>
                     <View style={{ flexDirection: "column", width: "50%", backgroundColor: "#3323af", height: "100%" }}>
                         <Image
-                            source={{ uri: "https://m.media-amazon.com/images/I/61VD6F3CiYL._AC_UF894,1000_QL80_.jpg" }}
+                            source={{ uri: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_6UUU-TZw2k5861_UFctjz2orTQUr0gxnrID8Jyc8YL6WhwACOi1NfTjgXvtxMU3KpjQ&usqp=CAU" }}
                             style={{ height: "100%", width: "100%" }}
                         />
                     </View>
@@ -68,8 +68,8 @@ function Cricket() {
                 <View style={{ width: 280, height: 150, borderRadius: 30, overflow: 'hidden', marginHorizontal: 10, flexDirection: "row", backgroundColor: "rgba(220, 20, 60, 0.6)", }}>
                     <View style={{ flexDirection: "column", width: "50%", backgroundColor: "rgba(220, 20, 60, 0.6)", height: "100%" }}>
                         <View style={{ height: "50%", width: "100%", backgroundColor: "rgba(220, 20, 60, 0.6)", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
-                            <Text style={{ textAlign: "center", fontSize: 24, fontWeight: "800" }}>MRF BAT</Text>
-                            <Text style={{ textAlign: "center", fontSize: 13, fontWeight: "500" }}>new bat not used sign by vk new special</Text>
+                            <Text style={{ textAlign: "center", fontSize: 24, fontWeight: "800" }}>DELTA GLOVES</Text>
+                            {/* <Text style={{ textAlign: "center", fontSize: 13, fontWeight: "500" }}>new bat not used sign by vk new special</Text> */}
                         </View>
                         <View style={{ height: "50%", width: "100%", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
                             <Text style={{ textAlign: "center", fontSize: 25, fontWeight: "900", height: "50%" }}>$900</Text>
@@ -82,7 +82,7 @@ function Cricket() {
                     </View>
                     <View style={{ flexDirection: "column", width: "50%", backgroundColor: "#3323af", height: "100%" }}>
                         <Image
-                            source={{ uri: "https://m.media-amazon.com/images/I/61VD6F3CiYL._AC_UF894,1000_QL80_.jpg" }}
+                            source={{ uri: "https://deltacricket.com/wp-content/uploads/2021/12/gloves-design-570x760@2x.jpg" }}
                             style={{ height: "100%", width: "100%" }}
                         />
                     </View>
