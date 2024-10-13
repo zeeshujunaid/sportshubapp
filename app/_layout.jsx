@@ -9,7 +9,6 @@ import { MaterialIcons } from "@expo/vector-icons";
 import { View, ImageBackground } from "react-native";
 import { DrawerActions } from "@react-navigation/native";
 import { withLayoutContext, useRouter, useNavigation } from "expo-router";
-import Profile from "./profile";
 
 const { Navigator } = createDrawerNavigator();
 const DrawerContainer = withLayoutContext(Navigator);
@@ -29,16 +28,16 @@ function DrawerContent(props) {
     <View style={{ flex: 1 }}>
       <View
         style={{
-          height: "30%", 
+          height: "30%",
           width: "100%",
           overflow: "hidden",
-          borderBottomWidth: 2,  
-          borderColor: "#E0E0E0", 
+          borderBottomWidth: 2,
+          borderColor: "#E0E0E0",
           borderRadius: 15,
-          elevation: 5, 
-          shadowColor: "#000",  
-          shadowOffset: { width: 0, height: 2 }, 
-          shadowOpacity: 0.2, 
+          elevation: 5,
+          shadowColor: "#000",
+          shadowOffset: { width: 0, height: 2 },
+          shadowOpacity: 0.2,
           shadowRadius: 4,
         }}
       >
@@ -50,7 +49,7 @@ function DrawerContent(props) {
             flex: 1,
             justifyContent: "flex-end",
             alignItems: "center",
-            resizeMode: "cover", 
+            resizeMode: "cover",
           }}
         >
           <Text
@@ -85,42 +84,6 @@ function DrawerContent(props) {
             icon={() => <Nav name="person" isLogout={false} />}
             onPress={() => {
               push("profile");
-              navigation.dispatch(DrawerActions.closeDrawer());
-            }}
-          />
-          <DrawerItem
-            label="Notifications"
-            labelStyle={{ fontSize: 17, fontWeight: "600", marginLeft: -10 }}
-            icon={() => <Nav name="notifications" isLogout={false} />}
-            onPress={() => {
-              push("Notification");
-              navigation.dispatch(DrawerActions.closeDrawer());
-            }}
-          />
-          <DrawerItem
-            label="Settings"
-            labelStyle={{ fontSize: 17, fontWeight: "600", marginLeft: -10 }}
-            icon={() => <Nav name="lock" isLogout={false} />}
-            onPress={() => {
-              push("SettingsScreen");
-              navigation.dispatch(DrawerActions.closeDrawer());
-            }}
-          />
-          <DrawerItem
-            label="Help"
-            labelStyle={{ fontSize: 17, fontWeight: "600", marginLeft: -10 }}
-            icon={() => <Nav name="info" isLogout={false} />}
-            onPress={() => {
-              push("Help");
-              navigation.dispatch(DrawerActions.closeDrawer());
-            }}
-          />
-          <DrawerItem
-            label="Invite Friends"
-            labelStyle={{ fontSize: 17, fontWeight: "600", marginLeft: -10 }}
-            icon={() => <Nav name="supervisor-account" isLogout={false} />}
-            onPress={() => {
-              push("InviteScreen");
               navigation.dispatch(DrawerActions.closeDrawer());
             }}
           />

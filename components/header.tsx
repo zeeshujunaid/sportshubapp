@@ -12,7 +12,7 @@ export default function Header(props: HeaderProps) {
   return (
     <View style={styles.container}>
       <Ionicons name="menu" size={25} color="white" onPress={()=> navigation.toggleDrawer()} />
-      <Text style={styles.title}>{props.title || "Home"}</Text>
+      <Text style={styles.title}>SPORTS HUB</Text>
     </View>
   );
 }
@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 20,
-    marginLeft: 50,
+    marginLeft: "28%",
     color: "white",
     fontWeight: "900",
   },
