@@ -1,4 +1,4 @@
-import { View, Text, Image, ScrollView, ImageBackground } from "react-native";
+import { View, Text, Image, ScrollView,  } from "react-native";
 import Header from "../components/header";
 import Cricket from "./categroies card/cricket";
 import Hockey from "./categroies card/hockey";
@@ -46,13 +46,13 @@ export default function Home() {
                     </View>
                 </View>
                 {/* first "ALL CATEGORIES" section */}
-                <Allcategroies/>
+                <Allcategroies />
                 <Cricket />
                 <Football />
                 <Basketball />
                 <View style={{ height: 180, width: "100%", flexDirection: "row", justifyContent: "space-around", paddingTop: "5%" }}>
-                    <Image source={{uri:"https://img.freepik.com/free-vector/abstract-dark-sales-background_23-2148429942.jpg"}}
-                    style={{height:"100%",width:"100%",resizeMode:"cover",}}
+                    <Image source={{ uri: "https://img.freepik.com/free-vector/abstract-dark-sales-background_23-2148429942.jpg" }}
+                        style={{ height: "100%", width: "100%", resizeMode: "cover", }}
                     />
                 </View>
                 <Hockey />

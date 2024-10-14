@@ -7,11 +7,11 @@ interface HeaderProps {
 }
 
 export default function Header(props: HeaderProps) {
-  const navigation:any = useNavigation()
+  const navigation: any = useNavigation()
 
   return (
     <View style={styles.container}>
-      <Ionicons name="menu" size={25} color="white" onPress={()=> navigation.toggleDrawer()} />
+      <Ionicons name="menu" size={25} color="white" onPress={() => navigation.toggleDrawer()} />
       <Text style={styles.title}>SPORTS HUB</Text>
     </View>
   );

@@ -6,7 +6,7 @@ import { Image, ScrollView, StyleSheet, Text, View } from "react-native";
 const Profile = () => {
   return (
     <View style={{ paddingBottom: 30 }}>
-      <Header/>
+      <Header />
       <ScrollView>
         <View style={styles.contain}>
           <View style={styles.inner}>

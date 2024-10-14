@@ -4,7 +4,7 @@ import { TextInput } from "react-native-paper";
 
 export default function Login() {
     const windowHeight = Dimensions.get('window').height; // Get window height
-    return(
+    return (
         <View style={{
             flex: 1,
             flexDirection: 'column',
@@ -15,7 +15,7 @@ export default function Login() {
         }}>
             <View style={{ height: windowHeight * 0.25, width: "100%", alignItems: "center" }}>
                 <Image
-                    source={{ uri: 'https://i.pinimg.com/originals/9c/83/88/9c838839fcf2197a8d8007b27ba713a3.gif' }} 
+                    source={{ uri: 'https://i.pinimg.com/originals/9c/83/88/9c838839fcf2197a8d8007b27ba713a3.gif' }}
                     style={{ height: "100%", width: "100%", resizeMode: "contain" }}
                 />
             </View>
@@ -45,20 +45,20 @@ export default function Login() {
                         borderRadius: 5,
                     }}
                     placeholder="Enter your password"
-                    secureTextEntry 
+                    secureTextEntry
                 />
-                
+
                 <View style={{ height: "50%", width: "100%", alignItems: "center", justifyContent: "center" }}>
-                    <TouchableOpacity 
-                        style={{ 
+                    <TouchableOpacity
+                        style={{
                             height: 50, // Fixed height
-                            width: "70%", 
-                            borderRadius: 5, 
-                            borderWidth: 2, 
-                            borderColor: "#008080", 
-                            backgroundColor: "#008080", 
-                            alignItems: "center", 
-                            justifyContent: "center" 
+                            width: "70%",
+                            borderRadius: 5,
+                            borderWidth: 2,
+                            borderColor: "#008080",
+                            backgroundColor: "#008080",
+                            alignItems: "center",
+                            justifyContent: "center"
                         }}
                         onPress={() => router.push("/home")}
                     >
