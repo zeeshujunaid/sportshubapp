@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "../components/header";
+import Header from "../../components/header";
 import Ionicons from "react-native-vector-icons/Ionicons";
 import { Image, ScrollView, StyleSheet, Text, View } from "react-native";
 

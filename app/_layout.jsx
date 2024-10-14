@@ -92,7 +92,7 @@ function DrawerContent(props) {
             labelStyle={{ fontSize: 17, fontWeight: "600", marginLeft: -10 }}
             icon={() => <Nav name="logout" isLogout={true} />}
             onPress={() => {
-              push("signup");
+              push("login");
               navigation.dispatch(DrawerActions.closeDrawer());
             }}
           />
