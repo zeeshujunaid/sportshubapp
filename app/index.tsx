@@ -4,20 +4,20 @@ import { useEffect } from "react"
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 export default function Index() {
-//   useEffect(()=>{
-//     checkUser()
-// },[])
+  useEffect(() => {
+    checkUser()
+  }, [])
 
-// const checkUser = async ()=>{
-//     const userId = await AsyncStorage.getItem('userID')
-//     if (userId !== null) {
-//         router.push("/home")
-// console.log("user found going home");
-//     }else(
-//        router.push("/login")
-//     )
-// }
-// console.log(checkUser);
+  const checkUser = async () => {
+    const userId = await AsyncStorage.getItem('userID')
+    if (userId !== null) {
+      router.push("/home")
+      console.log("user found going home");
+    } else (
+      router.push("/login")
+    )
+  }
+  console.log(checkUser);
   return (
     <View style={{ flex: 1, justifyContent: "center", alignItems: "center", backgroundColor: "#000000", }}>
       <Image

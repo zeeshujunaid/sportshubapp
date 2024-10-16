@@ -16,14 +16,14 @@ export default function Signup() {
     const [isLoading, setIsLoading] = useState(false);
 
     const handleSignup = async () => {
-        setIsLoading(true); 
+        setIsLoading(true);
         try {
             const response = await createUserWithEmailAndPassword(auth, email, password);
             const uid = response.user.uid;
-            
+
             // Save the user ID in AsyncStorage
-            await AsyncStorage.setItem('userID', uid); 
-            
+            await AsyncStorage.setItem('userID', uid);
+
             const userData = { name, email, city, uid };
             await setDoc(doc(db, 'users', uid), userData);
 
@@ -32,7 +32,7 @@ export default function Signup() {
         } catch (error) {
             Alert.alert("Something went wrong",);
         } finally {
-            setIsLoading(false); 
+            setIsLoading(false);
         }
 
         // Clear input fields
@@ -42,7 +42,7 @@ export default function Signup() {
         setPassword('');
     };
 
-    if (isLoading) {<Index/>}
+    if (isLoading) { <Index /> }
 
 
     return (
@@ -138,7 +138,7 @@ export default function Signup() {
                     <View style={{ flex: 1, alignItems: "center", height: "30%", width: "100%", paddingTop: 3, justifyContent: "center" }}>
                         <Text style={{ color: "#ffffff", }}>Already have an account?
                             <TouchableOpacity onPress={() => router.push("/login")}>
-                                <Text style={{ color: "rgba(220, 20, 60, 0.6)", paddingTop: "5%",fontSize:18,}}> Login</Text>
+                                <Text style={{ color: "rgba(220, 20, 60, 0.6)", paddingTop: "5%", fontSize: 18, }}> Login</Text>
                             </TouchableOpacity>
                         </Text>
                     </View>

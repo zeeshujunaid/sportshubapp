@@ -1,4 +1,4 @@
-import { View, Text, Image, ScrollView,  } from "react-native";
+import { View, Text, Image, ScrollView, } from "react-native";
 import Header from "../components/header";
 import Cricket from "./categroies card/cricket";
 import Hockey from "./categroies card/hockey";

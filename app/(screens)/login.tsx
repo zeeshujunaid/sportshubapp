@@ -11,16 +11,16 @@ export default function Login() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [isLoading, setIsLoading] = useState(false);
-  
+
     const handleSignin = async () => {
         setIsLoading(true);
         try {
             const response = await signInWithEmailAndPassword(auth, email, password);
             const uid = response.user.uid;
-            
+
             // Save the user ID in AsyncStorage
-            await AsyncStorage.setItem('userID', uid); 
-            
+            await AsyncStorage.setItem('userID', uid);
+
             Alert.alert("Login successful");
             router.push("/home");
         } catch (error) {
@@ -28,13 +28,13 @@ export default function Login() {
         } finally {
             setIsLoading(false);
         }
-  
+
         // Clear input fields
         setEmail('');
         setPassword('');
     };
-  
-    if (isLoading) {<Index/>}
+
+    if (isLoading) { <Index /> }
 
     const windowHeight = Dimensions.get('window').height;
     return (
@@ -56,13 +56,13 @@ export default function Login() {
             <View style={{ height: windowHeight * 0.40, width: "100%", gap: 15, alignItems: "center" }}>
                 <TextInput
                     style={{
-                        height: 50, 
+                        height: 50,
                         backgroundColor: "#FFFFFF",
                         width: '90%',
                         padding: 10,
                         borderColor: "#B22222",
-                        borderWidth: 1, 
-                        borderRadius: 8, 
+                        borderWidth: 1,
+                        borderRadius: 8,
                     }}
                     placeholder="Enter your email"
                     onChangeText={text => setEmail(text)}
@@ -71,12 +71,12 @@ export default function Login() {
 
                 <TextInput
                     style={{
-                        height: 50, 
+                        height: 50,
                         backgroundColor: "#FFFFFF",
                         width: '90%',
                         padding: 10,
                         borderColor: "#B22222",
-                        borderWidth: 1, 
+                        borderWidth: 1,
                         borderRadius: 8,
                     }}
                     placeholder="Enter your password"
@@ -88,7 +88,7 @@ export default function Login() {
                 <View style={{ height: "50%", width: "100%", alignItems: "center", justifyContent: "center" }}>
                     <TouchableOpacity
                         style={{
-                            height: 50, 
+                            height: 50,
                             width: "70%",
                             backgroundColor: "rgba(220, 20, 60, 0.6)",
                             alignItems: "center",
@@ -101,7 +101,7 @@ export default function Login() {
                     <View style={{ flex: 1, alignItems: "center", height: "30%", width: "100%", paddingTop: 3, justifyContent: "center" }}>
                         <Text style={{ color: "#ffffff", }}>Don't have an account?
                             <TouchableOpacity onPress={() => router.push("/signup")}>
-                                <Text style={{ color: "rgba(220, 20, 60, 0.6)", paddingTop: "5%",fontSize:18, }}> signup</Text>
+                                <Text style={{ color: "rgba(220, 20, 60, 0.6)", paddingTop: "5%", fontSize: 18, }}> signup</Text>
                             </TouchableOpacity>
                         </Text>
                     </View>
