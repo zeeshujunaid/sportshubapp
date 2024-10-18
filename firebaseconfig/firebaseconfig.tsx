@@ -20,31 +20,31 @@ const auth = getAuth(app);
 const db = getFirestore(app);
 
 // Set auth language (optional)
-auth.languageCode = 'en';
+// auth.languageCode = 'en';
 
-const provider = new GoogleAuthProvider();
+// const provider = new GoogleAuthProvider();
 
-const signInWithGoogle = async () => {
-    try {
-        const result = await signInWithPopup(auth, provider);
-        // This gives you a Google Access Token. You can use it to access Google APIs.
-        const credential = GoogleAuthProvider.credentialFromResult(result);
-        const token = credential.accessToken;
+// const signInWithGoogle = async () => {
+//     try {
+//         const result = await signInWithPopup(auth, provider);
+//         // This gives you a Google Access Token. You can use it to access Google APIs.
+//         const credential = GoogleAuthProvider.credentialFromResult(result);
+//         const token = credential.accessToken;
 
-        // The signed-in user info
-        const user = result.user;
-        console.log("User signed in: ", user);
-        // You can save user info like the UID, email, etc. here
-        console.log("User ID: ", user.uid);
-    } catch (error) {
-        // Handle Errors here
-        const errorCode = error.code;
-        const errorMessage = error.message;
-        const email = error.customData?.email;
-        const credential = GoogleAuthProvider.credentialFromError(error);
+//         // The signed-in user info
+//         const user = result.user;
+//         console.log("User signed in: ", user);
+//         // You can save user info like the UID, email, etc. here
+//         console.log("User ID: ", user.uid);
+//     } catch (error) {
+//         // Handle Errors here
+//         const errorCode = error.code;
+//         const errorMessage = error.message;
+//         const email = error.customData?.email;
+//         const credential = GoogleAuthProvider.credentialFromError(error);
 
-        console.error("Error during sign-in: ", errorMessage);
-    }
-};
+//         console.error("Error during sign-in: ", errorMessage);
+//     }
+// };
 
-export { auth, db, signInWithGoogle };
+export { auth, db };

@@ -7,7 +7,7 @@ import { createUserWithEmailAndPassword } from "firebase/auth";
 import { doc, setDoc } from "firebase/firestore";
 import { db, auth } from "../../firebaseconfig/firebaseconfig";
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import { signInWithGoogle } from '../../firebaseconfig/firebaseconfig';
+// import { signInWithGoogle } from '../../firebaseconfig/firebaseconfig';
 
 export default function Signup() {
     const [email, setEmail] = useState('');
@@ -16,15 +16,15 @@ export default function Signup() {
     const [password, setPassword] = useState('');
     const [isLoading, setIsLoading] = useState(false);
 
-    const handleGoogleSignIn = () => {
-        signInWithGoogle()
-            .then(() => {
-                router.push("/home");
-            })
-            .catch((error) => {
-                console.error(error);
-            });
-    };
+    // const handleGoogleSignIn = () => {
+    //     signInWithGoogle()
+    //         .then(() => {
+    //             router.push("/home");
+    //         })
+    //         .catch((error) => {
+    //             console.error(error);
+    //         });
+    // };
 
     const handleSignup = async () => {
         setIsLoading(true);
@@ -144,18 +144,18 @@ export default function Signup() {
                     >
                         <Text style={{ color: 'white' }}>SIGNUP</Text>
                     </TouchableOpacity>
-
-                    <TouchableOpacity onPress={handleGoogleSignIn} style={{ marginTop: 20 }}>
+{/* 
+                    <TouchableOpacity  style={{ marginTop: 20 }}>
                         <Image
                             source={{ uri: 'https://i.imgur.com/yczPzHD.png' }}
                             style={{ height: 100, width: 200, resizeMode: 'cover' }}
                         />
-                    </TouchableOpacity>
+                    </TouchableOpacity> */}
 
                     <View style={{ flex: 1, alignItems: "center", height: "30%", width: "100%", paddingTop: 3, justifyContent: "center" }}>
                         <Text style={{ color: "#ffffff" }}>Already have an account?
                             <TouchableOpacity onPress={() => router.push("/login")}>
-                                <Text style={{ color: "rgba(220, 20, 60, 0.6)", paddingTop: "5%", fontSize: 18 }}> Login</Text>
+                                <Text style={{ color: "rgba(220, 20, 60, 0.6)", paddingTop: "15%", fontSize: 18 }}> Login</Text>
                             </TouchableOpacity>
                         </Text>
                     </View>
