@@ -1,3 +1,4 @@
+import { router } from "expo-router";
 import { View, Text, ScrollView, ImageBackground } from "react-native";
 function Allcategroies() {
     return (
@@ -19,7 +20,11 @@ function Allcategroies() {
                             source={{ uri: 'https://img.freepik.com/free-vector/cricket-banner-batsman-championship-particle-background-use-cover-poster-template-brochure-decorated-flyer-banner_460848-7122.jpg' }}
                             style={{ width: '100%', height: '100%', justifyContent: 'center', alignItems: 'center' }}
                         >
-                            <Text style={{ textAlign: 'center', color: 'rgba(220, 20, 60, 0.6)', fontSize: 16, fontWeight: '800' }}>Cricket</Text>
+                            <Text style={{ textAlign: 'center', color: 'rgba(220, 20, 60, 0.6)', fontSize: 16, fontWeight: '800' }}
+                            onPress={() => {
+                                router.push('/(categroies card)/cricket')
+                            }}
+                            >Cricket</Text>
                         </ImageBackground>
                     </View>
 

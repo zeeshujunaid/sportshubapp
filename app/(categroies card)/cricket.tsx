@@ -1,7 +1,7 @@
 import { View, Text, Image, ScrollView, } from "react-native";
 function Cricket() {
     return (
-        < View style={{ width: '100%', alignItems: 'center', paddingBottom: 30, }}>
+        <View style={{ width: '100%', alignItems: 'center', paddingBottom: 30,backgroundColor:"#0d1117" }}>
             <View style={{ flexDirection: "row", justifyContent: "space-between", width: "100%", paddingTop: "10%", paddingBottom: "10%", }}>
                 <Text style={{ paddingLeft: 29, color: "#ffff", fontSize: 24, fontWeight: '700', textDecorationStyle: "solid" }}>
                     CRICKET

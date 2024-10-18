@@ -96,6 +96,15 @@ function DrawerContent(props) {
               navigation.dispatch(DrawerActions.closeDrawer());
             }}
           />
+          <DrawerItem
+            label="POSTADD"
+            labelStyle={{ fontSize: 17, fontWeight: "600", marginLeft: -10 }}
+            icon={() => <Nav name="" isLogout={true} />}
+            onPress={() => {
+              push("postadd");
+              navigation.dispatch(DrawerActions.closeDrawer());
+            }}
+          />
         </Drawer.Section>
       </DrawerContentScrollView>
     </View>
