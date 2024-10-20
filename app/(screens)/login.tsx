@@ -19,11 +19,11 @@ export default function Login() {
             const uid = response.user.uid;
 
             // Save the user ID in AsyncStorage
-            await AsyncStorage.setItem('userID', uid);
-
+            await AsyncStorage.getItem('userID');
             Alert.alert("Login successful");
             router.push("/home");
         } catch (error) {
+            console.log("not found")
             Alert.alert("Error",);
         } finally {
             setIsLoading(false);

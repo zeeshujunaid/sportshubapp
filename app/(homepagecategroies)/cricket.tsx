@@ -1,14 +1,18 @@
-import { View, Text, Image, ScrollView, } from "react-native";
+import { useRouter } from 'expo-router';
+import { View, Text, Image, ScrollView, TouchableOpacity, } from "react-native";
 function Cricket() {
+    const router = useRouter();
     return (
         <View style={{ width: '100%', alignItems: 'center', paddingBottom: 30,backgroundColor:"#0d1117" }}>
             <View style={{ flexDirection: "row", justifyContent: "space-between", width: "100%", paddingTop: "10%", paddingBottom: "10%", }}>
                 <Text style={{ paddingLeft: 29, color: "#ffff", fontSize: 24, fontWeight: '700', textDecorationStyle: "solid" }}>
                     CRICKET
                 </Text>
+                <TouchableOpacity onPress={() => router.push("../(mainpagecategroies)cricket")}>
                 <Text style={{ paddingRight: 10, color: "#ffff", fontSize: 18, fontWeight: '500', textDecorationStyle: "solid" }}>
                     See more
                 </Text>
+                </TouchableOpacity>
             </View>
             <View style={{ width: '100%', padding: 10 }}>
                 <ScrollView

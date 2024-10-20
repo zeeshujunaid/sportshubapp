@@ -1,11 +1,11 @@
 import { View, Text, Image, ScrollView, TouchableOpacity, } from "react-native";
 import Header from "../components/header";
-import Cricket from "./(categroies card)/cricket";
-import Hockey from "./(categroies card)/hockey";
-import Football from "./(categroies card)/football";
-import Tennis from "./(categroies card)/tennis";
-import Basketball from "./(categroies card)/basketball";
-import Allcategroies from "./(categroies card)/Allcategroiescard";
+import Cricket from "./(homepagecategroies)/cricket";
+import Hockey from "./(homepagecategroies)/hockey";
+import Football from "./(homepagecategroies)/football";
+import Tennis from "./(homepagecategroies)/tennis";
+import Basketball from "./(homepagecategroies)/basketball";
+import Allcategroies from "./(homepagecategroies)/Allcategroiescard";
 import Postadd from "../components/maindiv"
 
 
