@@ -8,7 +8,7 @@ function Cricket() {
                 <Text style={{ paddingLeft: 29, color: "#ffff", fontSize: 24, fontWeight: '700', textDecorationStyle: "solid" }}>
                     CRICKET
                 </Text>
-                <TouchableOpacity onPress={() => router.push("../(mainpagecategroies)cricket")}>
+                <TouchableOpacity onPress={() => router.push("../mainpagecategroies/cricket")}>
                 <Text style={{ paddingRight: 10, color: "#ffff", fontSize: 18, fontWeight: '500', textDecorationStyle: "solid" }}>
                     See more
                 </Text>
